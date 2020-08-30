@@ -1,0 +1,179 @@
+body,h1{
+    margin: 0;
+    padding: 0;
+   
+}
+
+body{
+    font-family: Alegreya , sarif;
+    font-size: 20px;
+}
+
+body header{
+    background-color: rgb(70, 116, 72);
+    color: white;
+    padding-left: 100px;
+    padding-top: 20px;
+}
+
+/* Site Navigation start */
+.site-nav{
+    margin-top: 20px;    
+}
+
+.site-nav ul{
+    padding: 0px;
+    margin-top: 0px;
+}
+
+.site-nav li{
+    float: left;
+    list-style: none;
+    padding: 10px;  
+    border: #ECECEC 2px solid;
+    margin-right: 5px;
+    border-bottom: 0px;
+    box-sizing: border-box;
+}
+
+/* make the thing as specific as possible */
+ /* ul .for-it-only{         
+    border-left: 0px;
+} */
+
+
+nav ul li:hover{
+    background-color: #ECECEC;
+}
+
+.site-nav a{
+    text-decoration: none;
+    color: white;
+}
+/* Site Navigation Ends */
+
+.clearfix:before, .clearfix:after {
+    content: "";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+.main-content{
+   max-width:  960px;
+    padding-left: 100px;   
+    padding-right: 100px;
+    
+   
+   
+}
+
+.block-design{
+    background-color: greenyellow;
+    height: 200px;
+    text-align: center;
+    padding-top: 92px;
+    box-sizing: border-box;
+}
+
+.column-one{
+    width: 66%;
+    float: left;
+    padding-right: 50px;
+    padding-top: 0;
+    margin-top: 0;
+    box-sizing: border-box;
+}
+
+.column-one h2{
+    text-shadow: 3px 5px 4px rgb(156, 144, 144);
+    padding-top: 20px;
+    padding-bottom: 0px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.sidebar{
+    width: 34%;
+    float: left;
+    padding-left: 20px;
+    padding-right: 20px;
+    box-sizing: border-box;
+    background-image: linear-gradient(to bottom, rgb(214, 214, 127) ,white);
+}
+
+@media screen and (max-width: 700px){
+    .column-one ,
+    .sidebar{
+        width: auto;
+        float: none;
+    }
+    .column-one{
+        padding-right: 0;
+    }
+    .main-content{
+        padding-right: 40px;
+        padding-left: 40px;
+    }
+    body header{
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+}
+
+@media screen and (max-width: 700px){
+
+    .site-nav li{
+        width: 33.332%;     /* Gives each li element 33% of available width*/
+        margin-right: 0;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        text-align: center;
+
+    }
+}
+
+@media screen and (max-width: 480px){
+    .main-content{
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+    body header{
+        padding-left: 20px;
+    }
+    .hide-small{
+        display: none;
+        
+    }
+}
+
+@media screen and (max-width: 480px){
+
+    .site-nav li{
+        width: 50%;
+        margin-right: 0;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        text-align: center;
+
+    }
+}
+
+@media screen and (min-width:1300px){
+    .main-content{
+        max-width: 90%;
+    }
+    body{
+        font-size: 25px;
+    }
+    .column-one{
+        padding-right: 100px;
+    }
+    
+}
